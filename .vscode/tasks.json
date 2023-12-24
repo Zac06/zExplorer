@@ -12,7 +12,9 @@
                 "-o",
                 "${cwd}/bin/zExplorer",
                 "-lncurses",
-                "-Wl,-rpath=."
+                "-Wl,-rpath=.",
+                "-static-libgcc",
+                "-static-libstdc++"
             ],
             "options": {
                 //"cwd": "${fileDirname}"   //if commented, uses root
