@@ -6,16 +6,16 @@
             "command": "/usr/bin/g++",
             "args": [
                 "-fdiagnostics-color=always",
-                "-std=c++20",
+                "-std=c++17",
                 "-g",
-                "${file}",
+                "src/*.cpp",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}",
+                "${cwd}/bin/zExplorer",
                 "-lncurses",
                 "-Wl,-rpath=."
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                //"cwd": "${fileDirname}"   //if commented, uses root
             },
             "problemMatcher": [
                 "$gcc"
